@@ -18,6 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.scene.ImageCursor;
 import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
 /**
  *
  * @author superanguri
@@ -33,7 +34,8 @@ public class MoneyBagger extends Application {
         btn.setText("START THE GREED");
         StackPane root = new StackPane();
         root.getChildren().addAll(image, btn);
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root, 300, 278);
+        
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
@@ -57,6 +59,7 @@ public class MoneyBagger extends Application {
         primaryStage.setTitle("Get The Money");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
+       
         primaryStage.show();
         
         primaryStage.setOnCloseRequest(e->{
