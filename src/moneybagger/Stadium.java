@@ -81,7 +81,7 @@ public class Stadium {
                     field.getGraphicsContext2D().fillText(text + " " + time, 0, 460);
 
                     try {
-                        Thread.sleep(20);
+                        Thread.sleep(15);
                     } catch (InterruptedException ex) {
                         Logger.getLogger(Stadium.class.getName()).log(Level.SEVERE, null, ex);
                     }
